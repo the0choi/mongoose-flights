@@ -14,12 +14,6 @@ var ticketsRouter = require('./routes/tickets');
 
 var app = express();
 
-app.set("port", process.env.PORT || 8000);
-
-app.listen(app.get("port"), () => {
-  console.log(`✅ PORT: ${app.get("port")} 🌟`);
-});
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
